@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * return: puts 
+ * Return: zero
  */
 int main(void)
 {
