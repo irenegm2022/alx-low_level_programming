@@ -1,20 +1,21 @@
 #include <stdio.h>                                                                                                                                     
                                                                                                                                                        
 /**                                                                                                                                                    
- * main - prints alphabet in lower and uppercase                                                                                                       
+ * main - prints alphabets in lowercase followed by new line , except q and e                                                                          
  *                                                                                                                                                     
  * Return: Always 0                                                                                                                                    
  */                                                                                                                                                    
 int main(void)                                                                                                                                         
 {                                                                                                                                                      
-        char lc;                                                                                                                                       
+        char ta;                                                                                                                                       
                                                                                                                                                        
-        for (lc = 'a'; lc <= 'z'; lc++)                                                                                                                
-                putchar(lc);                                                                                                                           
-                                                                                                                                                       
-        for (lc = 'A'; lc <= 'Z'; lc++)                                                                                                                
-                putchar(lc);                                                                                                                           
+        for (ta = 'a'; ta <= 'z'; ta++)                                                                                                                
+        {                                                                                                                                              
+                if (ta != 'e' && ta != 'q')                                                                                                            
+                        putchar(ta);                                                                                                                   
+        }                                                                                                                                              
                                                                                                                                                        
         putchar('\n');                                                                                                                                 
                                                                                                                                                        
-        return (0);
+        return (0);                                                                                                                                    
+}
