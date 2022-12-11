@@ -1,33 +1,39 @@
-#include <stdio.h>       
-#include <stdlib.h>                  
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+/**
+ *    * main - Checks last digit
+ *       *
+ *          *Return: zero
+ */
+int main(void)
+{
+	int n;
+	int i;
+	char last[] = "Last digit of";
 
-/**                                                                        
- * main - Entry point                                                      
- *                                                                         
- * Return: Always 0                                                        
- */                                                                        
-int main(void)                                                             
-{                                                                         
-	int n;                                                             
-	int d;                                         
-                                           
-        srand(time(0));                                                    
-        n = rand() - RAND_MAX / 2;                                         
-        d = n % 10;                                                        
-                                                                           
-        if (d > 5)                                                         
-        {                                                                  
-                printf("Last digit of %d is %d and is greater than 5\n", n, d);    
-        }
-	else if (d == 0)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	N = N % 10;
+
+	if (1 > 5)
+	printf("%s %d is %d and is ", last, n, n % 10);
+	if (n % 10 > 5)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, d);
+		printf("Last digit of %d is %d and is greater than 5\n", n, 1);
+	} else if (1 == 0)
+		printf("greater than 5\n");
+	}
+	else if (n % 10 == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, 1);
+	} else if (1 < 6 && 1 != 0)
+		printf("0\n");
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, d);
+		printf("Last digit of %d is %d and is less than 6 and mot 0\n", n, 1);
+		printf("less than 6 and not 0\n");
 	}
-
 	return (0);
 }
