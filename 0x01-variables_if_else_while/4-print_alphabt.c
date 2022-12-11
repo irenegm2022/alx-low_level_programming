@@ -1,21 +1,21 @@
-#include <stdio.h>                                                                                                                                     
-                                                                                                                                                       
-/**                                                                                                                                                    
- * main - prints alphabets in lowercase followed by new line , except q and e                                                                          
- *                                                                                                                                                     
- * Return: Always 0                                                                                                                                    
- */                                                                                                                                                    
-int main(void)                                                                                                                                         
-{                                                                                                                                                      
-        char ta;                                                                                                                                       
-                                                                                                                                                       
-        for (ta = 'a'; ta <= 'z'; ta++)                                                                                                                
-        {                                                                                                                                              
-                if (ta != 'e' && ta != 'q')                                                                                                            
-                        putchar(ta);                                                                                                                   
-        }                                                                                                                                              
-                                                                                                                                                       
-        putchar('\n');                                                                                                                                 
-                                                                                                                                                       
-        return (0);                                                                                                                                    
-}
+#include <stdio.h>
+
+/**
+ * main - print alphabet except q and e
+ *
+ * Return: zero
+ */
+int main(void)
+{
+	char ch = 'a';
+	while (ch <= 'z')
+	{
+		if (ch != 'q' && ch != 'e')
+		{
+			putchar(ch);
+		}
+		ch++
+		ch++;
+	}
+	putchar('\n');
+	return (0);
