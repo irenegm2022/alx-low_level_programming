@@ -1,28 +1,45 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * times_table - print the 9 times table, starting with zero.
- *
+ * print_to_98 - print all numbers from input to 98
+ * @n: the starting number
  */
-void times_table(void)
+void print_to_98(int n)
 {
-	int n;
-	int i;
-
-	for (n = 0; n <= 9; n++)
+	if (n >= 98)
+	if (n < 98)
 	{
-		_putchar('0');
-		for (i = 1; i <= 9; i++)
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
+		while (n <= 98)
 		{
-			int result = n * i;
-
-			_putchar(',');
-			_putchar(' ');
-			(result <= 9) ?
-			_putchar(' ') :
-			_putchar('0' + (result / 10));
-			_putchar('0' + (result % 10));
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
 		}
-	_putchar('\n');
 	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+	}
+	else
+	{
+		while (n < 98)
+			printf("%d ", n++);
+		printf("%d\n", n);
+		printf("98");
+	}
+	printf("\n");
 }
