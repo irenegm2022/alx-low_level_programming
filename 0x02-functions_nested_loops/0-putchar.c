@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - prints _putchar and a new line
  *
  * Return: Always 0
  */
